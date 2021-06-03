@@ -1,0 +1,21 @@
+{
+  "name": "unit_testing_jasmine_platzi",
+  "version": "1.0.0",
+  "description": "testing con jasmin",
+  "main": "app.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [
+    "jasmine",
+    "npm",
+    "test",
+    "unit",
+    "testing"
+  ],
+  "author": "David Angarita <david@dangwebs.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "jasmine": "^3.7.0"
+  }
+}
