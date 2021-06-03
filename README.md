@@ -29,3 +29,13 @@
 
 ## Iniciar las pruebas
 * $ npm test
+
+## Estructura basica de una prueba
+* describe('Descripción de lo que hara la prueba', => {
+    expect(funcionParaProbar('valor enviado')).toBe('valor esperado');})
+
+## Ciclos de vida de una prueba unitaria con Jasmine
+* beforeAll();
+* beforeEach();
+* afterAll();
+* afterEach();
