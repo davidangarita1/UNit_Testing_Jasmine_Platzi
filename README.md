@@ -1,4 +1,4 @@
-### Apuntes
+# Apuntes
 
 ## Instalar Eslint en el equipo
 * $ npm install -g eslint
