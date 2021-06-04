@@ -21,6 +21,24 @@
 ## Instalar Jasmine
 * $ npm install --save-dev jasmine
 
+## Inicializar Jasmine con Node
+* $ node ./node_modules/jasmine/bin/jasmine.js init
+
+## Agregar script en package.json para correr pruebas de server
+* "test:server": "node ./node_modules/jasmine/bin/jasmine.js"
+
+## Agregar linea en jasmine.json
+* "../server/**/*[sS]pec.js",
+
+## Comando para correr pruebas en server
+* $ npm run test:server
+
+## Instalar Jasmine-conole-reporter
+* $ npm i jasmine-console-reporter --save-dev
+
+## Agregar linea en package.json
+* "test:server:covegare": "node spec/specs.js",
+
 ## Inicializar proyecto con Jasmine
 * $ npx jasmine init
 
