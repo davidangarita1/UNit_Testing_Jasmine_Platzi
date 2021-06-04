@@ -84,14 +84,16 @@ describe('Descripción de lo que hara la prueba', => {
 * afterEach();
 
 ## Set de pruebas en Jasmine
-* expect(x).toEqual(y) verifica si ambos valores son iguales.
-* expect(x).toBe(y) verifica si ambos objetos son iguales.
-* expect(x).toMatch(pattern) verifica si el valor pertenece al patrón establecido.
-* expect(x).toBeDefined() verifica si el valor está definido.
-* expect(x).toBeUndefined() verifica si el valor es indefinido.
-* expect(x).toBeNull() verifica si el valor es nulo.
-* expect(x).toBeTruthy() verifica si el valor es verdadero.
-* expect(x).toBeFalsy(); verifica si el valor es falso.
-* expect(x).toContain(y) verifica si el valor actual contiene el esperado.
-* expect(x).toBeLessThan(y) verifica si el valor actual es menor que el esperado.
-* expect(x).toBeGreaterThan(y) verifica si el valor actual es mayor que el esperado.
+```javascript
+expect(x).toEqual(y) // verifica si ambos valores son iguales.
+expect(x).toBe(y) // verifica si ambos objetos son iguales.
+expect(x).toMatch(pattern) // verifica si el valor pertenece al patrón establecido.
+expect(x).toBeDefined() // verifica si el valor está definido.
+expect(x).toBeUndefined() // verifica si el valor es indefinido.
+expect(x).toBeNull() // verifica si el valor es nulo.
+expect(x).toBeTruthy() // verifica si el valor es verdadero.
+expect(x).toBeFalsy(); // verifica si el valor es falso.
+expect(x).toContain(y) // verifica si el valor actual contiene el esperado.
+expect(x).toBeLessThan(y) // verifica si el valor actual es menor que el esperado.
+expect(x).toBeGreaterThan(y) // verifica si el valor actual es mayor que el esperado.
+```
