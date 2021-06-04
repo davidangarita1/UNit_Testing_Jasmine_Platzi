@@ -1,8 +1,8 @@
 # Apuntes de Unit Testing con Jasmine
 
 ## Instalar Eslint en el equipo
-* Para verificar la sintaxis del codigo
-`$ npm install -g eslint`
+* Para verificar la sintaxis del codigo.
+* `$ npm install -g eslint`
 
 ## Descargar eslint a VsCode
 * busca eslint en la parte de los plugins y click en [install]
