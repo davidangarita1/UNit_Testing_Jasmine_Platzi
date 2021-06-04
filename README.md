@@ -33,11 +33,25 @@
 ## Comando para correr pruebas en server
 * $ npm run test:server
 
-## Instalar Jasmine-conole-reporter
+## Instalar Jasmine-console-reporter
 * $ npm i jasmine-console-reporter --save-dev
 
-## Agregar linea en package.json
-* "test:server:covegare": "node spec/specs.js",
+## Agregar linea en scripts package.json
+* "test:server:coverage": "node spec/specs.js",
+
+## Instalar nyc
+* $ npm install --save-dev nyc
+
+## Agregar linea en scrips package.json
+* "test:server:coverage": "nyc node spec/specs.js",
+
+## Agregar al package.json este objeto
+* "nyc": {
+    "report-dir": "./spec/istanbul/report",
+    "temp-dir": "./spec/istanbul",
+    "reporter": [ "text", "text-summary", "html" ],
+    "exclude": [ "spec/**/", "server/.spec.js" ]
+    }
 
 ## Inicializar proyecto con Jasmine
 * $ npx jasmine init
