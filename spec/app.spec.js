@@ -1,7 +1,23 @@
-const it = require('../framework').it;
-const expect = require('../framework').expect;
 const saludar = require('../app')
 
-it('La función saluda', () => {
-    expect(saludar('Platzi')).toBe('Hola Platzi');
+// Boolean, string, number : ToBe o ToEqual
+var x = true;
+
+// Object : ToEqual
+var a = {};
+var b = {};
+
+describe('verificar que la variable es true', () => {
+    it('La función saluda', () => {
+        expect(saludar('Platzi')).toContain('Hola');
+    });
+
+    it('X es true', () => {
+        expect(x).toBe(true);
+        expect(x).toEqual(true);
+    });
+
+    it('objetos iguales', () => {
+        expect(a).toEqual(b);
+    });
 });
