@@ -1,7 +1,7 @@
 # Apuntes
 
 ## Instalar Eslint en el equipo
-* $ npm install -g eslint
+`$ npm install -g eslint`
 
 ## Descargar eslint a VsCode
 * busca eslint en la parte de los plugins y click en [install]
@@ -13,41 +13,47 @@
 * busca prettier en la parte de los plugins y click en [install]
 
 ## Instalar Prettier en el equipo
-* $ npm install -g prettier
+`$ npm install -g prettier`
 
 ## Dar formato al nuestro archivo con prettier
-* $ prettier --write archivo.js
+`$ prettier --write archivo.js`
 
 ## Instalar Jasmine
-* $ npm install --save-dev jasmine
+`$ npm install --save-dev jasmine`
 
 ## Inicializar Jasmine con Node
-* $ node ./node_modules/jasmine/bin/jasmine.js init
+`$ node ./node_modules/jasmine/bin/jasmine.js init`
 
 ## Agregar script en package.json para correr pruebas de server
-* "test:server": "node ./node_modules/jasmine/bin/jasmine.js"
+```javascript
+"test:server": "node ./node_modules/jasmine/bin/jasmine.js"
+```
 
 ## Agregar linea en jasmine.json
-* "../server/**/*[sS]pec.js",
+`"../server/**/*[sS]pec.js",`
 
 ## Comando para correr pruebas en server
-* $ npm run test:server
+`$ npm run test:server`
 
 ## Instalar Jasmine-console-reporter
-* $ npm i jasmine-console-reporter --save-dev
+`$ npm i jasmine-console-reporter --save-dev`
 
 ## Agregar linea en scripts package.json
-* "test:server:coverage": "node spec/specs.js",
+```javascript
+"test:server:coverage": "node spec/specs.js",
+```
 
 ## Instalar nyc
-* $ npm install --save-dev nyc
+`$ npm install --save-dev nyc`
 
 ## Agregar linea en scrips package.json
-* "test:server:coverage": "nyc node spec/specs.js",
+```javascript
+"test:server:coverage": "nyc node spec/specs.js",
+```
 
 ## Agregar al package.json este objeto
 ```javascript
-* "nyc": {
+"nyc": {
     "report-dir": "./spec/istanbul/report",
     "temp-dir": "./spec/istanbul",
     "reporter": [ "text", "text-summary", "html" ],
@@ -56,18 +62,21 @@
 ```
 
 ## Inicializar proyecto con Jasmine
-* $ npx jasmine init
+`$ npx jasmine init`
 
 ## Agregar scripts de ejecucion de Jasmine en package.json
-* "scripts": { "test": "jasmine" }
+```javascript
+"scripts": { "test": "jasmine" }
+```
 
 ## Iniciar las pruebas
-* $ npm test
+`$ npm test`
 
 ## Estructura basica de una prueba
-* describe('Descripción de lo que hara la prueba', => {
+```javascript
+describe('Descripción de lo que hara la prueba', => {
     expect(funcionParaProbar('valor enviado')).toBe('valor esperado');})
-
+```
 ## Ciclos de vida de una prueba unitaria con Jasmine
 * beforeAll();
 * beforeEach();
