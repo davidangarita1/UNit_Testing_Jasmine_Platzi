@@ -46,12 +46,14 @@
 * "test:server:coverage": "nyc node spec/specs.js",
 
 ## Agregar al package.json este objeto
+```javascript
 * "nyc": {
     "report-dir": "./spec/istanbul/report",
     "temp-dir": "./spec/istanbul",
     "reporter": [ "text", "text-summary", "html" ],
     "exclude": [ "spec/**/", "server/.spec.js" ]
     }
+```
 
 ## Inicializar proyecto con Jasmine
 * $ npx jasmine init
